@@ -6,6 +6,11 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('Admin_Template/index');
+        return view('admin_panel/index');
+    }
+
+    public function static()
+    {
+        return view('admin_panel/static');
     }
 }

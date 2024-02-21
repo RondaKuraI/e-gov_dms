@@ -247,4 +247,20 @@ class Filters
     {
         return ucwords(strtolower($value));
     }
+
+    // ------------------------------------------------------------------
+    //I just add this custom filter function
+    public static function hideNumbers(string $value, int $display = 4) : string
+    {
+        $txt = '';
+        for($i = 0; $i < strlen($value); $i++){
+            if($i < $display){
+                $txt .= $value[$i];
+            }
+            else{
+                $txt .= 'X';
+            }
+        }
+        return $txt;
+    }
 }
