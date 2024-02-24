@@ -6,8 +6,8 @@ use App\Controllers\BaseController;
 
 class RegisterController extends BaseController
 {
-    // public function index()
-    // {
+    public function index()
+    {
     //     $data = [];
     //     if($this->request->getMethod() == 'POST'){
     //         $rules = [
@@ -24,8 +24,8 @@ class RegisterController extends BaseController
     //             $data['validation'] = $this->validator;
     //         }
     //     }
-    //     return view('auth/register.php');
-    // }
+        return view('auth/register.php');
+    }
 
     // public function register(){
     //     $this->form_validation->set_rules('first_name', 'First Name', 'trim|required|alpha');
